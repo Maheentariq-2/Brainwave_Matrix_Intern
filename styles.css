@@ -1,0 +1,212 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: url('https://t4.ftcdn.net/jpg/05/07/66/23/360_F_507662376_BTKmPlIGBvKlRHWKRNeFt7bj7H2SynQm.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar li {
+    margin-left: 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ff6b6b;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black; /* Changed to black */
+}
+
+.highlight-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Light background for highlighting */
+    padding: 1rem; /* Add some padding */
+    border-radius: 5px; /* Round the corners */
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+}
+
+.hero-section p {
+    margin: 1rem 0;
+    color: black; /* Changed to black */
+    font-size: 1.25rem; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+}
+
+.cta-button {
+    padding: 0.5rem 1.5rem;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px; /* Added margin to create space */
+}
+
+.cta-button:hover {
+    background-color: #ff4b4b;
+}
+
+/* Services Section */
+.services-section {
+    position: relative;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(9, 31, 53, 0.8);
+    color: white;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.service {
+    width: 30%;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service h3 {
+    color: #ff6b6b;
+    margin-bottom: 0.5rem;
+}
+
+.service p {
+    color: #fff;
+}
+
+/* About Section */
+.about-section {
+    position: relative;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    background-color: rgba(9, 31, 53, 0.8);
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.about-section h2,
+.about-section p {
+    position: relative;
+    z-index: 2;
+}
+
+/* Contact Section */
+.contact-section {
+    position: relative;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(9, 31, 53, 0.8);
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.contact-section h2,
+.contact-form {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 0.5rem 2rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #444;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+}
